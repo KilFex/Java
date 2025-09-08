@@ -35,7 +35,24 @@ public class ejercicio_con_list {
     	 name2.addAll(nameFinal);
     	 
     	 System.out.println(name2);
-    } 	
+    	 
+    	 System.out.println("------------------------------------");
+    	 
+    	 List<Integer> numinverter = new ArrayList<>();
+    	 
+    	 numinverter.add(1);
+    	 numinverter.add(2);
+    	 numinverter.add(3);
+    	 numinverter.add(4);
+    	 numinverter.add(5);
+    	 numinverter.add(6);
+    	 
+    	 for(int i = numinverter.size() -1; i >= 0; i--) {
+    		 System.out.println(numinverter.get(i));
+    	 }
+    	 
+    	 
+    } 	 
 }
 
 
