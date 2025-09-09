@@ -50,6 +50,24 @@ public class Ejercicios_intermedio_list {
 		
 		sonPrimos.addAll(agregar);
 		System.out.println("Estos son los numeros primos: " + sonPrimos);
+		
+		
+		
+		List<String> nombresMenosde5 = new ArrayList<>();
+		
+		nombresMenosde5.add("thalia");
+		nombresMenosde5.add("mario");
+		nombresMenosde5.add("marecela");
+		nombresMenosde5.add("juana");
+		nombresMenosde5.add("marcoandre");
+		
+		nombresMenosde5.removeIf(n -> n.length() >= 8);
+		System.out.println("estos son los nombrs: " + nombresMenosde5);
+		
+		
+		
+		
+		
 }
 	
 	public static boolean primo(int num) {
