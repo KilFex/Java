@@ -8,6 +8,9 @@ public class Servicio {
 	private int capacidad;
 	private double precio;
 	
+	public Servicio() {
+		
+	}
 	
 	
 	public Servicio(int id, String nombre, String descripcion, int capacidad, double precio) {
@@ -42,12 +45,22 @@ public class Servicio {
 		return capacidad;
 	}
 	public void setCapacidad(int capacidad) {
+		
+		if(capacidad > 3) {
+			precio = 56;
+		} else if(capacidad == 0) {
+			System.out.println("No hay personas en la habitacion entonces no hay precio");
+		} else {
+			precio = 25;
+		}
+		
 		this.capacidad = capacidad;
 	}
 	public double getPrecio() {
 		return precio;
 	}
 	public void setPrecio(double precio) {
+		setCapacidad(capacidad);
 		this.precio = precio;
 	}
 	
