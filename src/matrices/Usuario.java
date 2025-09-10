@@ -7,6 +7,10 @@ public class Usuario {
 	private String email;
 	private String telefono;
 	
+	public Usuario(String nombre) {
+		this.nombre = nombre;
+	}
+	
 	
 	public Usuario(int id, String nombre, String email, String telefono) {
 		super();
@@ -14,6 +18,7 @@ public class Usuario {
 		this.nombre = nombre;
 		this.email = email;
 		this.telefono = telefono;
+		
 	}
 	public int getId() {
 		return id;
